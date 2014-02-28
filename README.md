@@ -6,18 +6,21 @@ Clojure library designed to provide API to some of cryptocoin exchanges ([Crypts
 
 Basic usage in REPL:
 
-    user=> (require '[trampiti.core :as t])
-    user=> (let [crypsy (t/->Cryptsy "api-key" "api-secret")]
-               (t/market-data crypsy :all))
+```Clojure
+user=> (require '[trampiti.core :as t])
+user=> (let [crypsy (t/->Cryptsy "api-key" "api-secret")]
+         (t/market-data crypsy :all))
+```
 
 Full list of API methods you can see at [Cryptsy API docs](https://www.cryptsy.com/pages/api).
 
 ## TODO
 
-- implement BTC-e API
+ - implement BTC-e API
+ - implement coins-e API
 
 ## License
 
-Copyright © 2014 Alexander Dinu
+Copyright © 2014 Alexander Dinu, Reid McKenzie
 
 Distributed under the Eclipse Public License, the same as Clojure.
